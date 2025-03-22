@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+hr {
+    position: absolute;
+    height: 0.12em;
+    width: 23%;
+    background-color: var(--cor-da-linha);   
+}
+
+button{
+    position: absolute;
+    margin: 0 85% 35% 0;
+    padding: 1em;
+    border-radius: 5%;
+    cursor: pointer;
+    background-color: var(--cor-de-fundo-iniciar);
+    color: var(--cor-do-texto-botoes);
+}
+
+button.reiniciar {
+    display: none;
+    background-color: var(--cor-de-fundo-reiniciar);
+}
+
+.placar {
+    position: absolute;
+    margin: 0 0 35% 60%;
+    padding: 1em;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+}
+
+.tabuleiro .caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    width: 6em;
+    margin: 0.3em;
+    border: 0.1em solid black;  
+    cursor: pointer;
+    background-color: var(--cor-de-fundo-caixas);
+}
+
+.tabuleiro .caixa img {
+    width: 8em;
+    height: 6em; 
+    opacity: 0;
+}
+
+.jogadorAtual {
+    display: flex;
+    flex-direction: row;
+}
+
+.jogadorAtual img {
+    height: 4em;
+    width: 5em;
+    display: none;
+}
+
+.jogo .mensagemFimDeJogo p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5em;
+}
